@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect width="200" height="200" fill="#ffffff" stroke="#dddddd" stroke-width="2"/>
+  <text x="100" y="80" font-family="Arial" font-size="24" text-anchor="middle" fill="#333333">ISO</text>
+  <text x="100" y="120" font-family="Arial" font-size="24" text-anchor="middle" fill="#333333">14001:2015</text>
+  <path d="M100 135 L120 155 L80 155 Z" fill="#16a34a"/>
+  <circle cx="100" cy="160" r="10" fill="#16a34a"/>
+</svg> 
