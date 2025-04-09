@@ -99,19 +99,19 @@ export function ClientsLogosSection() {
           <div className="flex items-center gap-3">
             <CheckCircle className="h-6 w-6 text-primary" />
             <span className="text-lg md:text-xl font-semibold">
-              <span className="text-primary">100+</span> Projects Completed
+              <span className="text-primary">450+</span> Projects Completed
             </span>
           </div>
           <div className="flex items-center gap-3">
             <CheckCircle className="h-6 w-6 text-primary" />
             <span className="text-lg md:text-xl font-semibold">
-              <span className="text-primary">50+</span> Happy Clients
+              <span className="text-primary">550+</span> Happy Clients
             </span>
           </div>
           <div className="flex items-center gap-3">
             <CheckCircle className="h-6 w-6 text-primary" />
             <span className="text-lg md:text-xl font-semibold">
-              <span className="text-primary">7+</span> Years of Excellence
+              <span className="text-primary">50+</span> Years of Excellence
             </span>
           </div>
         </motion.div>

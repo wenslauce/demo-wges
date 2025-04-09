@@ -122,11 +122,11 @@ export function NewsletterSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
               <FeatureBlock 
                 title="Exclusive Content" 
-                description="Get access to exclusive content and updates not available elsewhere."
+                description="Get access to exclusive content and updates."
                 icon={<DocumentIcon />}
               />
               <FeatureBlock 
-                title="No Spam Promise" 
+                title="No Spam" 
                 description="We only send emails that matter. Unsubscribe at any time."
                 icon={<ShieldIcon />}
               />

@@ -19,7 +19,7 @@ export function Footer() {
   const companyLinks = [
     { href: "/about-us", label: "About Us" },
     { href: "/our-team", label: "Our Team" },
-    { href: "/sustainability", label: "Sustainability" },
+    { href: "/sustainability-policy", label: "Sustainability" },
     { href: "/careers", label: "Careers" },
     { href: "/contact", label: "Contact Us" }
   ];

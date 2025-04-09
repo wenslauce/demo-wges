@@ -62,7 +62,7 @@ export function WhoWeAreSection() {
                   </div>
                   <div>
                     <div className="text-sm text-gray-500">Years of Experience</div>
-                    <div className="text-2xl font-semibold text-secondary">100+</div>
+                    <div className="text-2xl font-semibold text-secondary">50+</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">

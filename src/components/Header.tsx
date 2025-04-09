@@ -20,6 +20,12 @@ import { cn } from "@/lib/utils";
 
 const services = [
   { 
+    title: "All Solutions",
+    href: "/solutions",
+    description: "Browse our complete range of energy solutions and services.",
+    icon: <ZapIcon className="w-4 h-4 text-primary-green" />
+  },
+  { 
     title: "Supercapacitor Energy Storage",
     href: "/solutions/supercapacitor-energy-storage",
     description: "Advanced energy storage solutions for maximum efficiency and reliability.",
@@ -58,8 +64,8 @@ const aboutSubmenu = [
     description: "Our story, mission and vision for a sustainable future."
   },
   {
-    title: "Testimonial",
-    href: "/testimonial",
+    title: "Testimonials",
+    href: "/testimonials",
     description: "What our satisfied clients say about our services."
   },
   {
@@ -362,19 +368,21 @@ const Header = () => {
 
             {/* Contact Us button */}
             <div className="ml-4">
-              <Button 
-                asChild 
-                variant="accent" 
-                className="bg-gradient-to-r from-accent-gold/90 to-accent-gold"
-              >
+              <Link href="/contact" className="inline-block">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
-                  <Link href="/contact">Contact Us</Link>
+                  <Button 
+                    variant="accent" 
+                    className="bg-gradient-to-r from-accent-gold/90 to-accent-gold"
+                    type="button"
+                  >
+                    Contact Us
+                  </Button>
                 </motion.div>
-              </Button>
+              </Link>
             </div>
           </div>
 
@@ -407,7 +415,14 @@ const Header = () => {
                         </button>
                         
                         <div className={`mt-2 pl-4 space-y-2 overflow-hidden transition-all duration-300 ${openSolutionsMenu ? 'max-h-96' : 'max-h-0'}`}>
-                          {services.map((service) => (
+                          <Link 
+                            href="/solutions"
+                            className="flex items-center gap-2 py-2 text-gray-300 hover:text-accent-gold transition-colors hover:translate-x-1 transition-transform font-medium"
+                          >
+                            <ZapIcon className="w-4 h-4 text-primary-green" />
+                            <span>All Solutions</span>
+                          </Link>
+                          {services.slice(1).map((service) => (
                             <Link 
                               key={service.href}
                               href={service.href}
@@ -445,9 +460,11 @@ const Header = () => {
                   </div>
 
                   <div className="border-t border-gray-800 p-5">
-                    <Button className="w-full" size="lg">
-                      Contact Us
-                    </Button>
+                    <Link href="/contact" className="block w-full">
+                      <Button className="w-full" size="lg">
+                        Contact Us
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </SheetContent>

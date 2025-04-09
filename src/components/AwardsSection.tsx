@@ -37,7 +37,7 @@ export function AwardsSection() {
       width: 280,
       height: 120,
       description: "Best Solar Storage Solution",
-      year: "2021"
+      year: "2024"
     }
   ];
 
