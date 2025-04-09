@@ -27,7 +27,7 @@ const projects: ProjectCard[] = [
     specs: "240kWp",
     type: "Flower Farm",
     gridType: "On grid",
-    previous: "previously KPLC",
+    previous: "KPLC",
     image: "/images/projects/equator-farm.avif",
     location: "Nanyuki, Kenya"
   },
@@ -36,7 +36,7 @@ const projects: ProjectCard[] = [
     specs: "400kWp",
     type: "Flower Farm",
     gridType: "On grid",
-    previous: "previously KPLC",
+    previous: "KPLC",
     image: "/images/projects/maasai-flowers.avif",
     location: "Naivasha, Kenya"
   },
@@ -45,7 +45,7 @@ const projects: ProjectCard[] = [
     specs: "50kWp",
     type: "Flower Farm",
     gridType: "On grid",
-    previous: "previously KPLC",
+    previous: "KPLC",
     image: "/images/projects/rimi-flowers.avif",
     location: "Naivasha, Kenya"
   },
@@ -54,7 +54,7 @@ const projects: ProjectCard[] = [
     specs: "125kWp",
     type: "Manufacturer",
     gridType: "On grid",
-    previous: "previously KPLC",
+    previous: "KPLC",
     image: "/images/projects/synresins.avif",
     location: "Thika, Kenya"
   },

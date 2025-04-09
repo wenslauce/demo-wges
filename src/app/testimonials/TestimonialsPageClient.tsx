@@ -49,7 +49,7 @@ export default function TestimonialsPageClient({
   };
 
   return (
-    <div className="pt-20 pb-16">
+    <div className="pt-0 pb-16">
       {/* Hero Section */}
       <div className="relative h-[500px]">
         <Image
@@ -227,8 +227,7 @@ export default function TestimonialsPageClient({
                 href="/consultation"
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-md inline-flex items-center justify-center font-medium transition-all group"
               >
-                Request Free Consultation
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                Get Quote                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
               <Link
                 href="/case-studies"

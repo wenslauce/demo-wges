@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import MapEmbed from "./MapEmbed";
+import { ContactForm } from "@/components/contact-form";
 
 export const metadata = {
   title: "Contact WGES | Get in Touch",
@@ -44,7 +45,7 @@ export default function ContactPage() {
     <main className="min-h-screen">
       <Header />
 
-      <div className="pt-20 pb-16">
+      <div className="pt-0 pb-16">
         {/* Hero Section */}
         <div className="relative h-[400px]">
           <Image
@@ -79,98 +80,7 @@ export default function ContactPage() {
                 or are interested in a career at W. Giertsen Energy Solutions, we're here to help.
               </p>
 
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                    Subject
-                  </label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                    required
-                  >
-                    <option value="">Select a subject</option>
-                    <option value="consultation">Get Quote</option>
-                    <option value="partnership">Business Partnership</option>
-                    <option value="careers">Careers</option>
-                    <option value="support">Technical Support</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={6}
-                    className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                    required
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-md font-medium transition-all"
-                >
-                  Send Message
-                </button>
-              </form>
+              <ContactForm />
             </div>
 
             <div>

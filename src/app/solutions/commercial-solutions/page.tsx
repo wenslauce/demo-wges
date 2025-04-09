@@ -82,7 +82,7 @@ export default function CommercialSolutionsPage() {
                   <LineChart className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-secondary">100+</h3>
+                  <h3 className="text-2xl font-bold text-secondary">50+</h3>
                   <p className="text-gray-600">MWp Installed</p>
                 </div>
               </div>

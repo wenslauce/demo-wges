@@ -84,10 +84,12 @@ export default function TestimonialsPage() {
   return (
     <main className="min-h-screen">
       <Header />
-      <TestimonialsPageClient 
-        additionalTestimonials={additionalTestimonials}
-        benefits={benefits}
-      />
+      <div className="pt-0">
+        <TestimonialsPageClient 
+          additionalTestimonials={additionalTestimonials}
+          benefits={benefits}
+        />
+      </div>
       <Footer />
     </main>
   );

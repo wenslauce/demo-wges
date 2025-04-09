@@ -120,7 +120,7 @@ export default function CaseStudiesClient({ projects, keyFeatures }: CaseStudies
                 <p className="text-gray-500 text-sm mb-4">
                   {project.location}
               </p>
-                <div className="space-y-2 mb-4">
+                <div className="space-y-2">
                   <p className="text-gray-700">
                     <span className="font-medium">Capacity:</span> {project.specs}
                   </p>
@@ -134,14 +134,7 @@ export default function CaseStudiesClient({ projects, keyFeatures }: CaseStudies
                     <span className="font-medium">Previous:</span> {project.previous}
                   </p>
               </div>
-              <Link
-                  href={`/solutions/case-studies/${project.title.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="inline-flex items-center text-primary hover:text-primary/90 font-medium group"
-              >
-                View Details
-                  <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
-              </div>
+            </div>
             </motion.div>
           ))}
         </div>
@@ -165,7 +158,7 @@ export default function CaseStudiesClient({ projects, keyFeatures }: CaseStudies
               { value: "450+", label: "Projects Completed" },
               { value: "75%", label: "Average Energy Savings" },
               { value: "100K+", label: "Tons CO₂ Saved" },
-              { value: "8+", label: "Years of Excellence" }
+              { value: "50+", label: "Years of Excellence" }
             ].map((stat, index) => (
               <motion.div
                 key={index}

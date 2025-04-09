@@ -146,19 +146,28 @@ export default function AboutUsPage() {
     {
       city: "Bergen",
       country: "Norway",
-      address: "Nøstegaten 78, 5011 Bergen",
+      address: "Nygårdsviken 1, 5165 Laksevåg, Bergen",
+      phone: "+47 55 94 30 00",
+      email: "energy@giertsen.no",
+      isHeadquarters: true,
       image: "/images/locations/bergen.avif"
     },
     {
       city: "Frankfurt",
       country: "Germany",
-      address: "Mainzer Landstraße 50, 60325 Frankfurt am Main",
+      address: "Robert-Bosch Straße 3, 64569 Nauheim",
+      phone: "+49 6152 9619 200",
+      email: "energy@giertsen.no",
+      isHeadquarters: false,
       image: "/images/locations/frankfurt.avif"
     },
     {
       city: "Nairobi",
       country: "Kenya",
-      address: "Kilimani Business Centre, Nairobi",
+      address: "Church Road No 90, Westlands",
+      phone: "+254 796 214 350",
+      email: "energy@giertsen.no",
+      isHeadquarters: false,
       image: "/images/locations/nairobi.avif"
     }
   ];
@@ -166,14 +175,16 @@ export default function AboutUsPage() {
   return (
     <main className="min-h-screen">
       <Header />
-      <AboutUsClient 
-        coreValues={coreValues}
-        certificates={certificates}
-        milestones={milestones}
-        qualityCommitments={qualityCommitments}
-        teamMembers={teamMembers}
-        locations={locations}
-      />
+      <div className="pt-0">
+        <AboutUsClient 
+          coreValues={coreValues}
+          certificates={certificates}
+          milestones={milestones}
+          qualityCommitments={qualityCommitments}
+          teamMembers={teamMembers}
+          locations={locations}
+        />
+      </div>
       <Footer />
     </main>
   );

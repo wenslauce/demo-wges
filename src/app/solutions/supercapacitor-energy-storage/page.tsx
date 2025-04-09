@@ -142,7 +142,7 @@ export default function SupercapacitorEnergyStoragePage() {
                       <Battery className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-secondary">1,000,000+</h3>
+                      <h3 className="text-2xl font-bold text-secondary">20,000+</h3>
                       <p className="text-gray-600">Charge Cycles</p>
                     </div>
                   </div>
@@ -550,7 +550,7 @@ export default function SupercapacitorEnergyStoragePage() {
                     <div className="p-6 border-b md:border-b-0 md:border-r border-gray-200 flex flex-col items-center text-center">
                       <Battery className="h-8 w-8 text-primary mb-4" />
                       <h4 className="text-lg font-medium text-secondary mb-2">Longer Lifecycle</h4>
-                      <p className="text-gray-600 text-sm">1,000,000+ charge cycles compared to 500-3,000 for traditional batteries</p>
+                      <p className="text-gray-600 text-sm">20,000+ charge cycles compared to 500-3,000 for traditional batteries</p>
                     </div>
                     
                     <div className="p-6 border-b md:border-b-0 md:border-r border-gray-200 flex flex-col items-center text-center">
@@ -631,7 +631,7 @@ export default function SupercapacitorEnergyStoragePage() {
                     <div className="min-w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center mt-1">
                       <Battery className="h-3 w-3 text-primary" />
                     </div>
-                    <span>No Capacity Degradation – Maintains efficiency over millions of cycles</span>
+                    <span>No Capacity Degradation – Maintains efficiency over 20,000 of cycles</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="min-w-5 h-5 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center mt-1">
@@ -736,8 +736,12 @@ export default function SupercapacitorEnergyStoragePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="p-6 bg-gray-50 border-b border-gray-100">
-              <h3 className="text-xl font-semibold text-secondary">Supercapacitors vs. Traditional Batteries</h3>
+            <div className="p-6 bg-primary text-white border-b border-primary-dark">
+              <h3 className="text-xl font-semibold flex items-center gap-2">
+                <Zap className="h-5 w-5" />
+                Supercapacitor vs Lithium Comparison
+              </h3>
+              <p className="text-sm text-white/80 mt-1">Comprehensive analysis of performance metrics and long-term benefits</p>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full">
@@ -745,39 +749,114 @@ export default function SupercapacitorEnergyStoragePage() {
                   <tr className="bg-gray-50">
                     <th className="px-6 py-4 text-left text-sm font-medium text-gray-500">Feature</th>
                     <th className="px-6 py-4 text-left text-sm font-medium text-primary">WGES Supercapacitors</th>
-                    <th className="px-6 py-4 text-left text-sm font-medium text-gray-500">Traditional Lithium-Ion</th>
-                    <th className="px-6 py-4 text-left text-sm font-medium text-gray-500">Lead-Acid Batteries</th>
+                    <th className="px-6 py-4 text-left text-sm font-medium text-gray-500">Lithium Batteries</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-100">
-                  <tr>
-                    <td className="px-6 py-4 text-sm text-gray-700">Cycle Life</td>
-                    <td className="px-6 py-4 text-sm text-gray-700 font-medium">1,000,000+ cycles</td>
-                    <td className="px-6 py-4 text-sm text-gray-700">500-3,000 cycles</td>
-                    <td className="px-6 py-4 text-sm text-gray-700">200-500 cycles</td>
+                  <tr className="bg-green-50/30">
+                    <td className="px-6 py-4 text-sm text-gray-700 flex items-center gap-2">
+                      <Battery className="h-4 w-4 text-gray-500" />
+                      Storage Cycle Life
+                    </td>
+                    <td className="px-6 py-4 text-sm text-primary font-medium">20,000 cycles</td>
+                    <td className="px-6 py-4 text-sm text-gray-700">6,000 cycles</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-gray-700">Operating Temperature</td>
-                    <td className="px-6 py-4 text-sm text-gray-700 font-medium">-40°C to 65°C</td>
-                    <td className="px-6 py-4 text-sm text-gray-700">0°C to 45°C</td>
-                    <td className="px-6 py-4 text-sm text-gray-700">-20°C to 50°C</td>
+                    <td className="px-6 py-4 text-sm text-gray-700 flex items-center gap-2">
+                      <Zap className="h-4 w-4 text-gray-500" />
+                      DC to DC efficiency (@25°)
+                    </td>
+                    <td className="px-6 py-4 text-sm text-primary font-medium">99% (Constant over time)</td>
+                    <td className="px-6 py-4 text-sm text-gray-700">70 to 90% (degrade over time)</td>
+                  </tr>
+                  <tr className="bg-green-50/30">
+                    <td className="px-6 py-4 text-sm text-gray-700 flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-500">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 8v4l2 2"></path>
+                      </svg>
+                      Rated Useable Capacity (%)
+                    </td>
+                    <td className="px-6 py-4 text-sm text-primary font-medium">100%</td>
+                    <td className="px-6 py-4 text-sm text-gray-700">80% (degrade over time)</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-gray-700">Charging Time</td>
-                    <td className="px-6 py-4 text-sm text-gray-700 font-medium">Minutes</td>
-                    <td className="px-6 py-4 text-sm text-gray-700">Hours</td>
-                    <td className="px-6 py-4 text-sm text-gray-700">Hours</td>
+                    <td className="px-6 py-4 text-sm text-gray-700 flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-500">
+                        <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"></path>
+                      </svg>
+                      Temperature Range
+                    </td>
+                    <td className="px-6 py-4 text-sm text-primary font-medium">-40°C to 65°C (natural cooling)</td>
+                    <td className="px-6 py-4 text-sm text-gray-700">-20°C to 65°C (cooling required)</td>
+                  </tr>
+                  <tr className="bg-green-50/30">
+                    <td className="px-6 py-4 text-sm text-gray-700 flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-500">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M8 12h8"></path>
+                      </svg>
+                      Charge and Discharge Rate
+                    </td>
+                    <td className="px-6 py-4 text-sm">
+                      <span className="bg-primary text-white text-xs px-2 py-0.5 rounded-full mr-2">Selected</span>
+                      <span className="text-primary font-medium">1.8C</span>
+                    </td>
+                    <td className="px-6 py-4 text-sm text-gray-700">0.1C to 0.5C</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-gray-700">Maintenance</td>
-                    <td className="px-6 py-4 text-sm text-gray-700 font-medium">None required</td>
-                    <td className="px-6 py-4 text-sm text-gray-700">Minimal</td>
-                    <td className="px-6 py-4 text-sm text-gray-700">Regular</td>
+                    <td className="px-6 py-4 text-sm text-gray-700 flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-500">
+                        <path d="M8 2h8a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2Z"></path>
+                        <path d="M16 4a2 2 0 0 1 2 2v10c0 1.1-.9 2-2 2H8a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2"></path>
+                        <path d="M10 2v2"></path>
+                        <path d="M14 2v2"></path>
+                        <path d="M12 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
+                        <path d="M12 16a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
+                      </svg>
+                      Thermal Runway
+                    </td>
+                    <td className="px-6 py-4 text-sm text-primary font-medium">No Risk</td>
+                    <td className="px-6 py-4 text-sm text-gray-700">Medium to High Risk</td>
+                  </tr>
+                  <tr className="bg-green-50/30">
+                    <td className="px-6 py-4 text-sm text-gray-700 flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-500">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      Warranty Period
+                    </td>
+                    <td className="px-6 py-4 text-sm text-primary font-medium">10+ years (no performance degradation)</td>
+                    <td className="px-6 py-4 text-sm text-gray-700">Max 10 years (performance degradation)</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-gray-700">Environmental Impact</td>
-                    <td className="px-6 py-4 text-sm text-gray-700 font-medium">Minimal</td>
-                    <td className="px-6 py-4 text-sm text-gray-700">Moderate</td>
+                    <td className="px-6 py-4 text-sm text-gray-700 flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-500">
+                        <path d="M12 2v8"></path>
+                        <path d="m16 6-4 4-4-4"></path>
+                        <path d="M8 16a4 4 0 0 1 8 0"></path>
+                        <path d="M10 20h4"></path>
+                      </svg>
+                      Over-Charging and Safety
+                    </td>
+                    <td className="px-6 py-4 text-sm text-primary font-medium">Draws Charge only as needed</td>
+                    <td className="px-6 py-4 text-sm text-gray-700">Potential Issues</td>
+                  </tr>
+                  <tr className="bg-green-50/30">
+                    <td className="px-6 py-4 text-sm text-gray-700 flex items-center gap-2">
+                      <Shield className="h-4 w-4 text-gray-500" />
+                      Reliability
+                    </td>
+                    <td className="px-6 py-4 text-sm text-primary font-medium">Maintenance Free and Reliable</td>
+                    <td className="px-6 py-4 text-sm text-gray-700">Some Maintenance Required</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 text-sm text-gray-700 flex items-center gap-2">
+                      <Leaf className="h-4 w-4 text-gray-500" />
+                      Environmental Impact
+                    </td>
+                    <td className="px-6 py-4 text-sm text-primary font-medium">Carbon based non-toxic materials</td>
                     <td className="px-6 py-4 text-sm text-gray-700">Significant</td>
                   </tr>
                 </tbody>
@@ -858,7 +937,7 @@ export default function SupercapacitorEnergyStoragePage() {
               Case Studies
             </h2>
             <p className="text-gray-700 max-w-3xl mx-auto">
-              See how our supercapacitor solutions have transformed energy storage for our clients
+              See how our energy solutions have transformed operations for our clients
             </p>
           </motion.div>
           
@@ -872,24 +951,31 @@ export default function SupercapacitorEnergyStoragePage() {
             >
               <div className="relative h-48">
                 <Image
-                  src="/images/solar-panels.avif"
-                  alt="Solar Farm Energy Storage"
+                  src="/images/projects/samburu-soroi.avif"
+                  alt="Samburu Soroi Lodge"
                   fill
                   className="object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <div className="p-6">
                 <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-3">
-                  Renewable Energy
+                  Off-grid Solution
                 </span>
-                <h3 className="text-xl font-semibold text-secondary mb-2">50MW Solar Farm Integration</h3>
-                <p className="text-gray-600 mb-4">How our supercapacitors provided grid stability and energy shifting for a large-scale solar installation.</p>
-                <Link href="/case-studies/solar-farm" className="text-primary font-medium inline-flex items-center group">
-                  <span>Read Case Study</span>
-                  <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                  </svg>
-                </Link>
+                <h3 className="text-xl font-semibold text-secondary mb-2">Samburu Soroi Lodge</h3>
+                <div className="space-y-2 mb-4">
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium">Location:</span> Samburu, Kenya
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium">Capacity:</span> 275kWp, 334kWh
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium">Type:</span> Safari Lodge
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium">Grid:</span> Off grid
+                  </p>
+                </div>
               </div>
             </motion.div>
             
@@ -902,24 +988,31 @@ export default function SupercapacitorEnergyStoragePage() {
             >
               <div className="relative h-48">
                 <Image
-                  src="/images/reference-project1.avif"
-                  alt="Data Center Backup Power"
+                  src="/images/projects/bitri.avif"
+                  alt="Botswana Institute of Technology"
                   fill
                   className="object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <div className="p-6">
                 <span className="inline-block px-3 py-1 rounded-full bg-primary-green/10 text-primary-green text-xs font-medium mb-3">
-                  Data Centers
+                  Educational Institution
                 </span>
-                <h3 className="text-xl font-semibold text-secondary mb-2">Mission-Critical Data Center</h3>
-                <p className="text-gray-600 mb-4">Providing uninterruptible power and thermal management for a 15MW data center facility.</p>
-                <Link href="/case-studies/data-center" className="text-primary font-medium inline-flex items-center group">
-                  <span>Read Case Study</span>
-                  <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                  </svg>
-                </Link>
+                <h3 className="text-xl font-semibold text-secondary mb-2">Botswana Institute of Technology</h3>
+                <div className="space-y-2 mb-4">
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium">Location:</span> Gaborone, Botswana
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium">Capacity:</span> 500kWp
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium">Type:</span> University
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium">Grid:</span> On grid
+                  </p>
+                </div>
               </div>
             </motion.div>
             
@@ -932,27 +1025,52 @@ export default function SupercapacitorEnergyStoragePage() {
             >
               <div className="relative h-48">
                 <Image
-                  src="/images/who-we-are.avif"
-                  alt="Island Microgrid"
+                  src="/images/projects/ameco.avif"
+                  alt="AMECO"
                   fill
                   className="object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <div className="p-6">
                 <span className="inline-block px-3 py-1 rounded-full bg-accent-gold/10 text-accent-gold text-xs font-medium mb-3">
-                  Microgrids
+                  Fuel Save Solution
                 </span>
-                <h3 className="text-xl font-semibold text-secondary mb-2">Island Community Microgrid</h3>
-                <p className="text-gray-600 mb-4">Creating energy independence with a renewable-powered microgrid for an island community of 5,000 residents.</p>
-                <Link href="/case-studies/island-microgrid" className="text-primary font-medium inline-flex items-center group">
-                  <span>Read Case Study</span>
-                  <svg className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                  </svg>
-                </Link>
+                <h3 className="text-xl font-semibold text-secondary mb-2">AMECO</h3>
+                <div className="space-y-2 mb-4">
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium">Location:</span> Nairobi, Kenya
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium">Capacity:</span> 150kWp
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium">Type:</span> Local Utility Company
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-medium">Grid:</span> Fuel Save
+                  </p>
+                </div>
               </div>
             </motion.div>
           </div>
+          
+          <motion.div 
+            className="mt-12 text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <Link
+              href="/solutions/case-studies"
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-md inline-flex items-center font-medium transition-all hover:shadow-lg hover:shadow-primary/20"
+            >
+              <span>View All Case Studies</span>
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </Link>
+          </motion.div>
         </div>
       </div>
 

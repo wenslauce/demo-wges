@@ -49,7 +49,7 @@ export default function NewsPage() {
     <main className="min-h-screen">
       <Header />
 
-      <div className="pt-20 pb-16">
+      <div className="pt-0 pb-16">
         {/* Hero Section */}
         <div className="relative h-[400px]">
           <Image
